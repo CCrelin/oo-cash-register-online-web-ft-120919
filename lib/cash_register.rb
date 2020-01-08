@@ -15,7 +15,8 @@ class CashRegister
     price_array << price * quantity
     price_array.each do |i| i+i = self.total 
   end 
-end 
+end
+end
     
     
    
