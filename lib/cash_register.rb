@@ -16,7 +16,7 @@ class CashRegister
     price_array.each do |i| i+i = self.total 
   end 
 end
-end
+
 
   def apply_discount
     if discount != nil
