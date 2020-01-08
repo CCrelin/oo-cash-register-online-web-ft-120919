@@ -26,5 +26,6 @@ class CashRegister
     array << a
     array 
   end
+  end
   
 end 
