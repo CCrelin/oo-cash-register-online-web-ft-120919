@@ -10,9 +10,10 @@ class CashRegister
   end 
   
   def add_item(title, price, quantity=1)
-    array = []
-    quantity.times {|q| @items << title , array << price * quantity}
-    binding.pry
+    price_array = []
+    quantity.times {|q| @items << title , price_array << price * quantity
+    }
+    
    
    
     
