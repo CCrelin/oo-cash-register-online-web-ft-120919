@@ -22,7 +22,8 @@ class CashRegister
   
   def items
     array =[]
-    array << add_item(title, price, quantity=1)   
+    add_item.each do |a|  
+    array << a
     array 
   end
   
