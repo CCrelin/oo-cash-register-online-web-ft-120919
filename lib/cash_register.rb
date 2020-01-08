@@ -1,3 +1,4 @@
+require "pry"
 class CashRegister 
   attr_accessor :total, :discount, :items, :void_last_transaction
   
@@ -10,9 +11,11 @@ class CashRegister
   
   def add_item(title, price, quantity=1)
     quantity.times {|q| @items << title}
-   sum = price * quantity
-    self.total += sum 
     @void_last_transaction -= price
+    binding.pry
+    sum = price * quantity
+    self.total += sum 
+    
     
   end 
 
