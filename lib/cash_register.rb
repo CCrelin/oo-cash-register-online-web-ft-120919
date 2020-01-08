@@ -12,7 +12,7 @@ class CashRegister
   def add_item(title, price, quantity=1)
     quantity.times {|q| @items << title} 
      sum = price * quantity
-     self.total += self.total += sum
+     self.total += sum
     
   end 
 end
