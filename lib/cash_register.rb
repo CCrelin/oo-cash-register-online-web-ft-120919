@@ -20,7 +20,7 @@ class CashRegister
     end
   end
   
-  def items
+  def items(a,b,c)
   
     add_item(a,b,c)
      
