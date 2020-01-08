@@ -21,9 +21,9 @@ class CashRegister
   end
   
   def items
-    array =[]
-    add_item(title, price, quantity=1)
-    array 
+  
+    add_item.shift
+     
 
   end
   
