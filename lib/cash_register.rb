@@ -12,7 +12,7 @@ class CashRegister
     quantity.times {|q| @items << title}
    sum = price * quantity
     self.total += sum 
-    @void_last_transaction = price
+    @void_last_transaction -= price
     
   end 
 
