@@ -8,7 +8,7 @@ class CashRegister
   end 
   
   def add_item(title, price, quantity=1)
-   @items << title quantity.times 
+   @items << quantity.times {|q| 
    sum = price * quantity
     self.total += sum 
   end 
