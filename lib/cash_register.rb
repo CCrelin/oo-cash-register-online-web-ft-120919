@@ -11,8 +11,9 @@ class CashRegister
   
   def add_item(title, price, quantity=1)
     price_array = []
-    quantity.times {|q| @items << title , price_array << price * quantity
-    }
+    quantity.times {|q| @items << title} 
+    price_array << price * quantity
+    
     
    
    
