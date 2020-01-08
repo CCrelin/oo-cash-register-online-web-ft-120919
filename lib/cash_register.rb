@@ -14,7 +14,7 @@ class CashRegister
     binding.pry
     sum = price * quantity
     self.total += sum 
-    @void_last_transaction = sum - price
+    @void_last_transaction = 
     
     
   end 
