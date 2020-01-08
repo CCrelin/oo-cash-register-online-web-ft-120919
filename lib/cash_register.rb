@@ -22,7 +22,7 @@ class CashRegister
   
   def items
   array =[]
-  array << add_item.shift
+  array << add_item(.shift)
   array 
   end
   
