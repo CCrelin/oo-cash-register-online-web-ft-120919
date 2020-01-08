@@ -13,9 +13,8 @@ class CashRegister
     quantity.times {|q| @items << title} 
      sum = price * quantity
      self.total += sum
-    
-  end 
-end
+    @last_transaction = price * quantity
+  end
 
 
   def apply_discount
@@ -26,6 +25,7 @@ end
       return "There is no discount to apply."
     end
   end
-  
-  
+   
+   def void_last_transaction 
+    @last_transaction - self.total
 end 
