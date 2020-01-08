@@ -20,7 +20,7 @@ class CashRegister
     end
   end
   
-  def items(title, price, quantity=1)
+  def items
     array =[]
     add_item(title, price, quantity=1)
     array 
