@@ -11,9 +11,9 @@ class CashRegister
   
   def add_item(title, price, quantity=1)
     quantity.times {|q| @items << title}
-    @void_last_transaction -= price
     binding.pry
     sum = price * quantity
+    @void_last_transaction -= price
     self.total += sum 
     
     
