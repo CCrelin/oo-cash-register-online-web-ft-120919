@@ -20,9 +20,9 @@ class CashRegister
     end
   end
   
-  def items(items)
+  def items
     array =[]
-    array << items 
+    array << add_item 
     array 
   end
   
