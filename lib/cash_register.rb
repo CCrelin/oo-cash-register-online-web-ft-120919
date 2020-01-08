@@ -1,19 +1,19 @@
 require "pry"
 class CashRegister 
-  attr_accessor :total, :discount, :items, :void_last_transaction
+  attr_accessor :total, :discount, :items, :last_transaction
   
-  def initialize(discount=nil, void_last_transaction=0)
+  def initialize(discount=nil, last_transaction=0)
     @total = 0
     @discount = discount 
     @items =[]
-    @void_last_transaction = void_last_transaction
+    @last_transaction = last_transaction
   end 
   
   def add_item(title, price, quantity=1)
-    price_array = []
     quantity.times {|q| @items << title} 
-    price_array << price * quantity
-    price_array.each do |i| i+i = self.total 
+     sum = price * quantity
+     self.total += self.total += sum
+    
   end 
 end
 
