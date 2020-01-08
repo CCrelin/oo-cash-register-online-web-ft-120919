@@ -22,7 +22,7 @@ class CashRegister
   
   def items
   
-    add_item.shift
+    add_item(a,b,c)
      
 
   end
