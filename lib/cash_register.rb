@@ -15,7 +15,7 @@ class CashRegister
     if discount != nil
       self.total = (self.total * ((100.0 - discount.to_f)/100)).to_i
       return "After the discount, the total comes to $#{self.total}."
-    elsif discount = nil
+    else 
       return "There is no discount to apply."
     end
   end
