@@ -21,10 +21,4 @@ class CashRegister
     end
   end
   
-  def items
-  array =[]
-  array << add_item(title, price, quantity=1)
-  array 
-  end
-  
 end 
