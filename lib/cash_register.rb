@@ -20,4 +20,10 @@ class CashRegister
     end
   end
   
+  def items(items)
+    array =[]
+    array << items 
+    array 
+  end
+  
 end 
